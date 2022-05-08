@@ -826,12 +826,12 @@ ul {
   transition: border-color 250ms cuubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription__email__email:focus {
+.subscription__email:focus {
   outline: none;
   border-color: var(--secondary-color);
 }
 
-.subscription__email__email::placeholder {
+.subscription__email::placeholder {
   color: inherit;
   line-height: inherit;
 }
