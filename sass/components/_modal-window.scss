@@ -153,50 +153,81 @@
         letter-spacing: 0.03em;
         color: var(--grey-color);
     }
+
+    &__label-policy>a {
+        color: var(--secondary-color);
 }
 
-.modal-window__label-policy>a {
-    color: var(--secondary-color);
-}
+    &__input:focus {
+        outline: none;
+        border-color: var(--secondary-color);
+    }
 
-.modal-window__input:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-}
+    &__input:focus+&__icon {
+        fill: var(--secondary-color);
+    }
 
-.modal-window__input:focus+.modal-window__icon {
-    fill: var(--secondary-color);
-}
+    &__input-text::placeholder {
+        font-size: 12px;
+        line-height: 1.167;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-.modal-window__input-text::placeholder {
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
+    &__input-text:focus {
+        border: 1px solid var(--secondary-color);
+    }
 
-.modal-window__input-text:focus {
-    border: 1px solid var(--secondary-color);
-}
+    &__label-policy::before {
+        display: inline-flex;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--main-color);
+        border-radius: 2px;
+        background-repeat: no-repeat;
+    }
 
-.modal-window__label-policy::before {
-    display: inline-flex;
-    content: "";
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--main-color);
-    border-radius: 2px;
-    background-repeat: no-repeat;
-}
+    &__checkbox:checked+&__label-policy::before {
+        background-size: contain;
+        border: 2px solid var(--secondary-color);
+        background-color: var(--secondary-color);
+        transition-property: background-color, border-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-image: url(../images/icon6box4.svg);
+    }
 
-.modal-window__checkbox:checked+.modal-window__label-policy::before {
-    background-size: contain;
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    transition-property: background-color, border-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image: url(../images/icon6box4.svg);
+    &__policy-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        width: 200px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1, 875;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-style: none;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        margin-right: 164px;
+        margin-bottom: 40px;
+        margin-left: 164px;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__policy-button:focus,
+    &__policy-button:hover {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+    }
 }
 
 .visually-hidden {
@@ -211,35 +242,4 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-}
-
-.modal-window__policy-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1, 875;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-style: none;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    margin-right: 164px;
-    margin-bottom: 40px;
-    margin-left: 164px;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus,
-    &:hover {
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
-        cursor: pointer;
-    }
 }
