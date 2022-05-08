@@ -382,54 +382,54 @@
         </div>
     </footer>
 <!--Okno moodalne-->
-    <div class="backdrop is-hidden modal" data-modal>
-        <div class="modal">
+    <div class="backdrop is-hidden modal " data-modal>
+        <div class="modal container">
             <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
             <form class="modal-window" autocomplete="off">
-                <div class="modal-line">
-                    <label class="modal-label">Imię
-                        <span class="modal-form">
-                            <input class="modal-input" type="text" name="name-user" placeholder="" />
-                            <svg class="modal-window-icon" width="18" height="18">
+                <div class="modal-window__line">
+                    <label class="modal-window__label">Imię
+                        <span class="modal-window__span">
+                            <input class="modal-window__input" type="text" name="name-user" placeholder="" />
+                            <svg class="modal-window__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-icon6box1"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
-                <div class="modal-line">
-                    <label class="modal-label">Telefon
-                        <span class="modal-form">
-                            <input class="modal-input" type="tel" name="phone-user" placeholder="" />
-                            <svg class="modal-window-icon" width="18" height="18">
+                <div class="modal-window__line">
+                    <label class="modal-window__label">Telefon
+                        <span class="modal-window__span">
+                            <input class="modal-window__input" type="tel" name="phone-user" placeholder="" />
+                            <svg class="modal-window__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-icon6box2"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
-                <div class="modal-line">
-                    <label class="modal-label">E-mail
-                        <span class="modal-form">
-                            <input class="modal-input" type="email" name="email-user" placeholder="" />
-                            <svg class="modal-window-icon" width="18" height="18">
+                <div class="modal-window__line">
+                    <label class="modal-window__label">E-mail
+                        <span class="modal-window__span">
+                            <input class="modal-window__input" type="email" name="email-user" placeholder="" />
+                            <svg class="modal-window__icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-icon6box3"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
-                <div class="modal-message">
-                    <label class="modal-label-text">Komentarz
-                        <textarea class="modal-input-text" name="textare" rows="6" placeholder="Wprowadź tekst"></textarea>
+                <div class="modal-window__message">
+                    <label class="modal-window__label-text">Komentarz
+                        <textarea class="modal-window__input-text" name="textare" rows="6" placeholder="Wprowadź tekst"></textarea>
                     </label>
                 </div>
-                <div class="policy">
-                    <input id="user-policy" type="checkbox" class="modal-form-policy-checkbox visually-hidden" name="policy"
+                <div class="modal-window__policy">
+                    <input id="user-policy" type="checkbox" class="modal-window__checkbox visually-hidden" name="policy"
                         value="accept-policy" />
-                    <label for="user-policy" class="modal-form-policy-text">
+                    <label for="user-policy" class="modal-window__label-policy">
                         Oświadczam, iż akceptuję <a href="#regulamin">Regulamin</a> i
                         <a href="#policy">Politykę Prywatności.</a>
                     </label>
                 </div>
-                <button type="submit" class="policy-button">Wyślij</button>
+                <button type="submit" class="modal-window__policy-button">Wyślij</button>
             </form>
             <button type="button" class="close-btn" data-modal-close>X
                 <svg class="close-icon">
