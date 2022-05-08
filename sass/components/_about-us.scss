@@ -1,0 +1,31 @@
+.about-us__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.about-us__item {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.about-us__caption {
+    display: block;
+}
+
+.about-us__label {
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--third-backgroundcolor);
+}
